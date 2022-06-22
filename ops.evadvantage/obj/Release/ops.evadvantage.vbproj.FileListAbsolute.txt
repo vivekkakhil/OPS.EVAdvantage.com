@@ -1,0 +1,11 @@
+E:\Release EVAdvantag\ops.evadvantage\bin\ops.evadvantage.dll.config
+E:\Release EVAdvantag\ops.evadvantage\bin\ops.evadvantage.dll
+E:\Release EVAdvantag\ops.evadvantage\bin\ops.evadvantage.pdb
+E:\Release EVAdvantag\ops.evadvantage\bin\ops.evadvantage.xml
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.AssemblyReference.cache
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.Resources.resources
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.GenerateResource.cache
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.CoreCompileInputs.cache
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.dll
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.xml
+E:\Release EVAdvantag\ops.evadvantage\obj\Release\ops.evadvantage.pdb

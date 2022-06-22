@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{504DF22E-EC8C-4750-99FB-D6237B6582FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ops.evadvantage</RootNamespace>
+    <AssemblyName>ops.evadvantage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44339</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ops.evadvantage.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ops.evadvantage.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\BLL\AuthCode.cs" />
+    <Content Include="App_Code\BLL\AuthorizeNet.cs" />
+    <Content Include="App_Code\BLL\Company.cs" />
+    <Content Include="App_Code\BLL\CompanyExceptions.cs" />
+    <Content Include="App_Code\BLL\CreateEmp.cs" />
+    <Content Include="App_Code\BLL\DataUpload.cs" />
+    <Content Include="App_Code\BLL\EmpInfo.cs" />
+    <Content Include="App_Code\BLL\report.cs" />
+    <Content Include="App_Code\BLL\ssverify.cs" />
+    <Content Include="App_Code\BLL\Verify.cs" />
+    <Content Include="App_Code\Business Object\AuthCode.cs" />
+    <Content Include="App_Code\Business Object\AuthorizeNetRequest.cs" />
+    <Content Include="App_Code\Business Object\AuthorizeNetRespose.cs" />
+    <Content Include="App_Code\Business Object\Company.cs" />
+    <Content Include="App_Code\Business Object\CreateEmp.cs" />
+    <Content Include="App_Code\Business Object\DataUpload.cs" />
+    <Content Include="App_Code\Business Object\EmpInfo.cs" />
+    <Content Include="App_Code\Business Object\ssverify.cs" />
+    <Content Include="App_Code\Business Object\Verify.cs" />
+    <Content Include="App_Code\DAL\ds_AuthCode.cs" />
+    <Content Include="App_Code\DAL\ds_Company.cs" />
+    <Content Include="App_Code\DAL\ds_CreateEmp.cs" />
+    <Content Include="App_Code\DAL\ds_DataUpload.cs" />
+    <Content Include="App_Code\DAL\ds_EmpInfo.cs" />
+    <Content Include="App_Code\DAL\ds_report.cs" />
+    <Content Include="App_Code\DAL\ds_ssverify.cs" />
+    <Content Include="App_Code\DAL\ds_Verify.cs" />
+    <Content Include="App_Code\DAL\GenericDAL.cs" />
+    <Content Include="App_Code\DAL\GenericDbConnection.cs" />
+    <Content Include="App_Code\Utilities.cs" />
+    <Content Include="authorizeNet.aspx" />
+    <Content Include="authorizeNet.aspx.cs" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder.dll" />
+    <Content Include="contact.aspx" />
+    <Content Include="contact.aspx.cs" />
+    <Content Include="createEmp.aspx" />
+    <Content Include="createEmp.aspx.cs" />
+    <Content Include="createEmpN.aspx" />
+    <Content Include="createEmpN.aspx.cs" />
+    <Content Include="createVerifier.aspx" />
+    <Content Include="createVerifier.aspx.cs" />
+    <Content Include="createVerifierN.aspx" />
+    <Content Include="createVerifierN.aspx.cs" />
+    <Content Include="css\bubble-tooltip.css" />
+    <Content Include="css\dhtmlgoodies_calendar.css" />
+    <Content Include="editEmpInfo.aspx" />
+    <Content Include="editEmpInfo.aspx.cs" />
+    <Content Include="editVerifier.aspx" />
+    <Content Include="editVerifier.aspx.cs" />
+    <Content Include="empHome.aspx" />
+    <Content Include="empHome.aspx.cs" />
+    <Content Include="EmployeeLogin.aspx" />
+    <Content Include="EmployeeLogin.aspx.cs" />
+    <Content Include="employees.aspx" />
+    <Content Include="employees.aspx.cs" />
+    <Content Include="employment.aspx" />
+    <Content Include="employment.aspx.cs" />
+    <Content Include="EmploymentSalary.aspx" />
+    <Content Include="EmploymentSalary.aspx.cs" />
+    <Content Include="errorlogs.txt" />
+    <Content Include="EVA.master.cs" />
+    <Content Include="faq.aspx" />
+    <Content Include="faq.aspx.cs" />
+    <Content Include="forgetPwd.aspx" />
+    <Content Include="forgetPwd.aspx.cs" />
+    <Content Include="forgetPwdN.aspx" />
+    <Content Include="forgetPwdN.aspx.cs" />
+    <Content Include="forgetPwdVeri.aspx" />
+    <Content Include="forgetPwdVeri.aspx.cs" />
+    <Content Include="forgetPwdVeriN.aspx" />
+    <Content Include="forgetPwdVeriN.aspx.cs" />
+    <Content Include="google56615ad8387619f7.html" />
+    <Content Include="howdoes.aspx" />
+    <Content Include="howdoes.aspx.cs" />
+    <Content Include="images\action_help.gif" />
+    <Content Include="images\admin.gif" />
+    <Content Include="images\belt1.JPG" />
+    <Content Include="images\bg_nav.gif" />
+    <Content Include="images\bt_dd_2.gif" />
+    <Content Include="images\bubble_bottom.gif" />
+    <Content Include="images\bubble_middle.gif" />
+    <Content Include="images\bubble_top.gif" />
+    <Content Include="images\calendar.gif" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\close_over.gif" />
+    <Content Include="images\contact_btn.jpg" />
+    <Content Include="images\contact_btn_select.jpg" />
+    <Content Include="images\DNNExplorer_Cancel.gif" />
+    <Content Include="images\DNNExplorer_OK.gif" />
+    <Content Include="images\dot.JPG" />
+    <Content Include="images\down.gif" />
+    <Content Include="images\down_over.gif" />
+    <Content Include="images\down_time.gif" />
+    <Content Include="images\down_time_over.gif" />
+    <Content Include="images\eLogin.gif" />
+    <Content Include="images\eLogin.jpg" />
+    <Content Include="images\employee_btn.jpg" />
+    <Content Include="images\employee_btn_select.jpg" />
+    <Content Include="images\faq_btn.jpg" />
+    <Content Include="images\faq_btn_select.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\footer_blue.jpg" />
+    <Content Include="images\header_blue.jpg" />
+    <Content Include="images\header_blue1.jpg" />
+    <Content Include="images\header_img.jpg" />
+    <Content Include="images\home_btn.jpg" />
+    <Content Include="images\home_btn_select.jpg" />
+    <Content Include="images\howDoes.jpg" />
+    <Content Include="images\image001.png" />
+    <Content Include="images\left.gif" />
+    <Content Include="images\left_over.gif" />
+    <Content Include="images\login-bg.gif" />
+    <Content Include="images\login-bg1.gif" />
+    <Content Include="images\login_btn.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo_ccAmex.gif" />
+    <Content Include="images\logo_ccDiscover.gif" />
+    <Content Include="images\logo_ccMC.gif" />
+    <Content Include="images\logo_ccVisa.gif" />
+    <Content Include="images\logo_eva.html" />
+    <Content Include="images\logo_eva.swf" />
+    <Content Include="images\lyjaLogo.jpg" />
+    <Content Include="images\lyja_logo.swf" />
+    <Content Include="images\moderator.gif" />
+    <Content Include="images\newUser.gif" />
+    <Content Include="images\newUser.jpg" />
+    <Content Include="images\ratingminus.gif" />
+    <Content Include="images\ratingplus.gif" />
+    <Content Include="images\right.gif" />
+    <Content Include="images\right_over.gif" />
+    <Content Include="images\Saprator.JPG" />
+    <Content Include="images\services_btn.jpg" />
+    <Content Include="images\services_btn_select.jpg" />
+    <Content Include="images\simple.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\SSNVerification.GIF" />
+    <Content Include="images\SSN_Verification.JPG" />
+    <Content Include="images\success.bmp" />
+    <Content Include="images\tab_center_active.gif" />
+    <Content Include="images\tab_left_active.gif" />
+    <Content Include="images\tab_left_inactive.gif" />
+    <Content Include="images\tab_right_active.gif" />
+    <Content Include="images\tab_right_inactive.gif" />
+    <Content Include="images\v2.gif" />
+    <Content Include="images\v2_old.gif" />
+    <Content Include="images\verifier_btn.jpg" />
+    <Content Include="images\verifier_btn_select.jpg" />
+    <Content Include="images\viewDemo.gif" />
+    <Content Include="images\vLogin.gif" />
+    <Content Include="images\vLogin.jpg" />
+    <Content Include="images\whatIs.jpg" />
+    <Content Include="images\whiAre.jpg" />
+    <Content Include="images\whiAre_old.jpg" />
+    <Content Include="images\whyEva.jpg" />
+    <Content Include="index.aspx.cs" />
+    <Content Include="index.html" />
+    <Content Include="Login.master.cs" />
+    <Content Include="payment.aspx" />
+    <Content Include="payment.aspx.cs" />
+    <Content Include="privacy.aspx" />
+    <Content Include="privacy.aspx.cs" />
+    <Content Include="privacyN.aspx" />
+    <Content Include="privacyN.aspx.cs" />
+    <Content Include="report\EMPRPT.aspx" />
+    <Content Include="report\EMPRPT.aspx.cs" />
+    <Content Include="report\fonts\opensans-bold-webfont.svg" />
+    <Content Include="report\fonts\opensans-light-webfont.svg" />
+    <Content Include="report\fonts\opensans-regular-webfont.svg" />
+    <Content Include="report\images\ev-advantage-report-logo.png" />
+    <Content Include="report\images\report-hd-bg.png" />
+    <Content Include="report\MSSRPT.aspx" />
+    <Content Include="report\MSSRPT.aspx.cs" />
+    <Content Include="report\SSRPT.aspx" />
+    <Content Include="report\SSRPT.aspx.cs" />
+    <Content Include="report\styles\fonts.css" />
+    <Content Include="report\styles\PrintStyles.css" />
+    <Content Include="report\styles\styles.css" />
+    <Content Include="report\Temp\Default2.aspx" />
+    <Content Include="report\Temp\Default2.aspx.cs" />
+    <Content Include="report\VFRPT - Copy.aspx" />
+    <Content Include="report\VFRPT.aspx" />
+    <Content Include="report\VFRPT.aspx - Copy.cs" />
+    <Content Include="report\VFRPT.aspx.cs" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="Scripts\bubble-tooltip.js" />
+    <Content Include="Scripts\dhtmlgoodies_calendar.js" />
+    <Content Include="services.aspx" />
+    <Content Include="services.aspx.cs" />
+    <Content Include="SocialService\editSSUser.aspx" />
+    <Content Include="SocialService\editSSUser.aspx.cs" />
+    <Content Include="SocialService\EVASsv.master.cs" />
+    <Content Include="SocialService\forgetPwd.aspx" />
+    <Content Include="SocialService\forgetPwd.aspx.cs" />
+    <Content Include="SocialService\forgetPwdN.aspx" />
+    <Content Include="SocialService\forgetPwdN.aspx.cs" />
+    <Content Include="SocialService\login.aspx" />
+    <Content Include="SocialService\login.aspx.cs" />
+    <Content Include="SocialService\loginN.aspx" />
+    <Content Include="SocialService\loginN.aspx.cs" />
+    <Content Include="SocialService\socialServices.aspx" />
+    <Content Include="SocialService\socialServices.aspx.cs" />
+    <Content Include="SocialService\SSHome.aspx" />
+    <Content Include="SocialService\SSHome.aspx.cs" />
+    <Content Include="SocialService\SSNewUser.aspx" />
+    <Content Include="SocialService\SSNewUser.aspx.cs" />
+    <Content Include="SocialService\SSNewUserN.aspx" />
+    <Content Include="SocialService\SSNewUserN.aspx.cs" />
+    <Content Include="style.css" />
+    <Content Include="terms.aspx" />
+    <Content Include="terms.aspx.cs" />
+    <Content Include="termsN.aspx" />
+    <Content Include="termsN.aspx.cs" />
+    <Content Include="VerifierLogin.aspx" />
+    <Content Include="VerifierLogin.aspx.cs" />
+    <Content Include="verifiers.aspx" />
+    <Content Include="verifiers.aspx.cs" />
+    <Content Include="veriHome.aspx" />
+    <Content Include="veriHome.aspx.cs" />
+    <Content Include="Web.config" />
+    <Content Include="whyeva.aspx" />
+    <Content Include="whyeva.aspx.cs" />
+    <Content Include="xml\paymentInfo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmploymentSalary.aspx.bak" />
+    <Content Include="EmploymentSalary.aspx.cs.bak" />
+    <Content Include="EVA - Copy.master" />
+    <Content Include="EVA.master" />
+    <Content Include="images\logo_eva.fla" />
+    <Content Include="images\v2.psd" />
+    <Content Include="images\whiAre.psd" />
+    <Content Include="index.old" />
+    <Content Include="Login.master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="report\fonts\opensans-bold-webfont.eot" />
+    <Content Include="report\fonts\opensans-bold-webfont.ttf" />
+    <Content Include="report\fonts\opensans-bold-webfont.woff" />
+    <Content Include="report\fonts\opensans-light-webfont.eot" />
+    <Content Include="report\fonts\opensans-light-webfont.ttf" />
+    <Content Include="report\fonts\opensans-light-webfont.woff" />
+    <Content Include="report\fonts\opensans-regular-webfont.eot" />
+    <Content Include="report\fonts\opensans-regular-webfont.ttf" />
+    <Content Include="report\fonts\opensans-regular-webfont.woff" />
+    <Content Include="SocialService\EVASsv.master" />
+    <Content Include="VWE_Request_Form.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44339/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
