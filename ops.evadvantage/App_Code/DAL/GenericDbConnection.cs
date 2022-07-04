@@ -9,7 +9,7 @@ using Microsoft.Practices.EnterpriseLibrary.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 
-namespace EVA.DAL
+namespace ops.evadvantage.DAL
 {
     /// <summary>
     /// This class is used to Create Database connection based on the provider specified in the config file

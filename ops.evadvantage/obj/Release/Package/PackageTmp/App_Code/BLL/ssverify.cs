@@ -9,16 +9,16 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 using System.Data.Common;
 
 /// <summary>
 /// Summary description for ssverify
 /// </summary>
 /// 
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
-    public class ssverify : EVA.BusinessObject.ssverify
+    public class ssverify : ops.evadvantage.BusinessObject.ssverify
     {
         public ssverify()
         {

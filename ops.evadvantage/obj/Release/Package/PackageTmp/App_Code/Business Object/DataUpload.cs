@@ -14,7 +14,7 @@ using System.Xml.Linq;
 /// Summary description for DataUpload
 /// </summary>
 /// 
-namespace EVA.BusinessObject
+namespace ops.evadvantage.BusinessObject
 {
     public class DataUpload
     {

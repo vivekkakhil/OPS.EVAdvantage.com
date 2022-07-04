@@ -14,7 +14,7 @@ using System.Data.Common;
 /// <summary>
 /// Summary description for ds_EmpInfo
 /// </summary>
-namespace EVA.DAL
+namespace ops.evadvantage.DAL
 {
     public class ds_EmpInfo
     {

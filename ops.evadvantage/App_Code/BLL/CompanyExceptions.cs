@@ -25,7 +25,7 @@ public class CompanyExceptions
             SqlParameter[] p = new SqlParameter[1];
             p[0] = new SqlParameter("@CompanyID", this.CompanyID);
 
-            DataTable dt = EVA.DAL.GenericDAL.ExecuteDataTable("CompanyExceptions_SelectByCompanyID", true, p);
+            DataTable dt = ops.evadvantage.DAL.GenericDAL.ExecuteDataTable("CompanyExceptions_SelectByCompanyID", true, p);
             return dt;
         }
         catch (Exception ex)
@@ -42,7 +42,7 @@ public class CompanyExceptions
             p[0] = new SqlParameter("@CompanyID", this.CompanyID);
             p[1] = new SqlParameter("@ExceptionText", this.ExceptionText);
 
-            return EVA.DAL.GenericDAL.ExecuteNonQuery("CompanyExceptions_InsertUpdate", true, p);
+            return ops.evadvantage.DAL.GenericDAL.ExecuteNonQuery("CompanyExceptions_InsertUpdate", true, p);
         }
         catch (Exception ex)
         {

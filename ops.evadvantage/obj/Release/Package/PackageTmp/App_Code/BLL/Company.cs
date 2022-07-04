@@ -10,15 +10,15 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.Common;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 
 /// <summary>
 /// Summary description for Company
 /// </summary>
 /// 
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
-    public class Company : EVA.BusinessObject.Company
+    public class Company : ops.evadvantage.BusinessObject.Company
     {
         public Company()
         {

@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 ' associated with an assembly.
 
 ' Review the values of the assembly attributes
-<Assembly: AssemblyTitle("ops.evadvantage")>
+<Assembly: AssemblyTitle("portal.evadvantage")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ops.evadvantage")>
+<Assembly: AssemblyProduct("portal.evadvantage")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("504df22e-ec8c-4750-99fb-d6237b6582fc")>
+<Assembly: Guid("26f04287-1f8d-4f2d-b273-a2ec347752a7")>
 
 ' Version information for an assembly consists of the following four values:
 '

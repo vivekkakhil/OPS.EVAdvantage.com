@@ -13,7 +13,7 @@ using System.Xml.Linq;
 /// <summary>
 /// Summary description for Company
 /// </summary>
-namespace EVA.BusinessObject
+namespace ops.evadvantage.BusinessObject
 {
     public class Company
     {

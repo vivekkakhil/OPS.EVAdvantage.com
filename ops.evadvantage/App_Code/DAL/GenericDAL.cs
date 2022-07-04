@@ -9,7 +9,7 @@ using System.Data.Common;
 using Microsoft.Practices.EnterpriseLibrary.Common;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 
-namespace EVA.DAL
+namespace ops.evadvantage.DAL
 {
     /// <summary>
     /// This class provides basic functionality to perform database specific operations

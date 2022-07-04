@@ -10,25 +10,35 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.BLL;
+using ops.evadvantage.BLL;
 
 public partial class editVerifier : System.Web.UI.Page
 {
     CreateEmp objEmp = new CreateEmp();
     static int UserDetailId = 0;
+    string verifier;
+    string searchby;
+    string searchfor;
     protected void Page_Load(object sender, EventArgs e)
     {
         Response.Cache.SetCacheability(HttpCacheability.NoCache);
+        LinkButton lnk = (LinkButton)Master.FindControl("lnkVerifier");
+        lnk.Font.Bold = true;
+        LinkButton lnk1 = (LinkButton)Master.FindControl("lnkManage");
+        lnk1.Font.Bold = true;
+        verifier = Request.QueryString["user"].ToString();
+        searchby = Request.QueryString["searchby"].ToString();
+        searchfor = Request.QueryString["searchfor"].ToString();
         if (IsPostBack != true)
         {
-            if (Session["user"] != null)
-            {
+          
                 BindDropDown();
-                objEmp.UserName = Session["user"].ToString();
+                objEmp.UserName = verifier;
                 DataSet ds = objEmp.GetUserName();
                 if (ds.Tables[0].Rows.Count != 0)
                 {
                     UserDetailId = Convert.ToInt32(ds.Tables[0].Rows[0]["UserDetailId"]);
+                    lblDateCreated.Text = ds.Tables[0].Rows[0]["FormatedDateCreated"].ToString();
                     txtFname.Text = ds.Tables[0].Rows[0]["FirstName"].ToString();
                     txtLname.Text = ds.Tables[0].Rows[0]["LastName"].ToString();
                     txtCname.Text = ds.Tables[0].Rows[0]["CompanyName"].ToString();
@@ -47,7 +57,7 @@ public partial class editVerifier : System.Web.UI.Page
                     txtAns.Text = ds.Tables[0].Rows[0]["Ans"].ToString();                    
                     txtPwd.Attributes["value"] = ds.Tables[0].Rows[0]["Pwd"].ToString();
                 }
-            }
+            
         }
     }
     protected void btnClear_Click(object sender, EventArgs e)
@@ -56,33 +66,33 @@ public partial class editVerifier : System.Web.UI.Page
     }
     protected void btnCancel_Click(object sender, EventArgs e)
     {
-        Response.Redirect("veriHome.aspx");
+        Response.Redirect("verifier.aspx?searchby=" + searchby + "&searchfor=" + searchfor);
     }
     private void BindDropDown()
     {
-        EVA.Utilities.BindDropDownList(ddlState, objEmp.GetState(), "StateName", "StateId");
-        EVA.Utilities.BindDropDownList(ddlQuestion, objEmp.GetQuestion(), "Question", "QuestionId");
+        ops.evadvantage.Utilities.BindDropDownList(ddlState, objEmp.GetState(), "StateName", "StateId");
+        ops.evadvantage.Utilities.BindDropDownList(ddlQuestion, objEmp.GetQuestion(), "Question", "QuestionId");
     }
     protected void btnUpdate_Click(object sender, EventArgs e)
     {
-        objEmp = PrepareParameterUser();
-        objEmp.UpdateData();
+        //objEmp = PrepareParameterUser();
+        //objEmp.UpdateData();
 
         objEmp = PrepareParameterDetails();
         objEmp.UpdateDetails();
 
-        EVA.Utilities.MessageBox("Account updated Successfully.", Page);
+        ops.evadvantage.Utilities.MessageBox("Account updated Successfully.", Page);
         ClearControl();
 
 
     }
-    private CreateEmp PrepareParameterUser()
-    {
-        objEmp.UserId = Convert.ToInt32(Session["userid"]);
-        objEmp.Pwd = txtPwd.Text;
+    //private CreateEmp PrepareParameterUser()
+    //{
+    //    objEmp.UserId = Convert.ToInt32(Session["userid"]);
+    //    objEmp.Pwd = txtPwd.Text;
 
-        return objEmp;
-    }
+    //    return objEmp;
+    //}
     private CreateEmp PrepareParameterDetails()
     {
         objEmp = new CreateEmp();
@@ -109,7 +119,7 @@ public partial class editVerifier : System.Web.UI.Page
     }
     private void ClearControl()
     {
-        txtPwd.Text = String.Empty;
+        //txtPwd.Text = String.Empty;
         txtFname.Text = String.Empty;
         txtLname.Text = String.Empty;
         txtCname.Text = String.Empty;
@@ -124,7 +134,7 @@ public partial class editVerifier : System.Web.UI.Page
         txtEmail.Text = String.Empty;
         txtBusiness.Text = String.Empty;
         txtReason.Text = String.Empty;
-        ddlQuestion.SelectedValue = "0";
-        txtAns.Text = String.Empty;
+        //ddlQuestion.SelectedValue = "0";
+        //txtAns.Text = String.Empty;
     }
 }

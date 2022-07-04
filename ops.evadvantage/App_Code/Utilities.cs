@@ -14,7 +14,7 @@ using System.Net.Mail;
 /// <summary>
 /// Summary description for Utilities
 /// </summary>
-namespace EVA
+namespace ops.evadvantage
 {
     public class Utilities
     {

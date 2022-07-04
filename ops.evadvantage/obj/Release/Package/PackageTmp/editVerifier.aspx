@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/EVA.master" AutoEventWireup="true" CodeFile="editVerifier.aspx.cs" Inherits="editVerifier" Title="Edit Verifier Information" %>
+﻿<%@ Page Language="C#" MasterPageFile="EVAadmin.master" AutoEventWireup="true" CodeFile="editVerifier.aspx.cs" Inherits="editVerifier" Title="Edit Verifier Information" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .style1
         {
             width: 277px;
+            height: 18px;
         }
         .style2
         {
@@ -17,9 +18,9 @@
     <asp:ScriptManagerProxy ID="scriptProxy" runat="server">
     </asp:ScriptManagerProxy>
     <asp:UpdatePanel ID="upPanel" runat="server">
-        <ContentTemplate><div class="content">
+        <ContentTemplate><div class="content1">
   
-      <table cellpadding="0" cellspacing="0" >
+      <table cellpadding="0" cellspacing="0" width="100%" >
                     <tr>
                         <td >
                             <asp:Label ID="Label16" runat="server" 
@@ -33,16 +34,18 @@
                                 Text="Marked fields are mandatory." Font-Italic="True"></asp:Label>
                         </td>
                     </tr>
-                    <tr>
-                        <td  colspan="2">
-                            <hr style="width: 798px" />
-                        </td>
-                    </tr>
                 </table>
     <table cellpadding="0" cellspacing="0" width="100%">
         
         <tr>
             <td align="left" class="style1" colspan="2">
+            </td>
+        </tr>
+        <tr>
+            <td align="left" class="style2" >
+                Date Created :</td>
+            <td>
+                <asp:Label ID="lblDateCreated" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -122,7 +125,7 @@
                 <asp:Label ID="Label7" runat="server" Text="State :"></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ddlState" runat="server" Width="158px" 
+                <asp:DropDownList ID="ddlState" runat="server" Width="164px" 
                     CssClass="textbox" >
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
@@ -213,48 +216,6 @@
                     ControlToValidate="txtReason" 
                     ErrorMessage="Please enter reason for obtaining verification.">*</asp:RequiredFieldValidator>
             </td>
-        </tr><tr>
-            <td align="left" class="style2"  >
-                <asp:Label ID="Label32" runat="server" Font-Bold="True" ForeColor="Red" 
-                    Text="*"></asp:Label>
-                <asp:Label ID="Label33" runat="server" Text="Password :"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password" Width="158px" 
-                    CssClass="textbox"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" 
-                    ControlToValidate="txtPwd" ErrorMessage="Please enter password.">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
-                    ControlToValidate="txtPwd" 
-                    ErrorMessage="Password must be at least 10 characters,must contain at least one lower case letter, one upper case letter, one digit and one special character.Valid special characters (which are configurable) are -   @#$%^&amp;+=!" 
-                    ValidationExpression="^.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&amp;+=!]).*$">*</asp:RegularExpressionValidator>
-            </td>
-        </tr>
-        <tr>
-            <td align="left" class="style2" >
-                <asp:Label ID="Label36" runat="server" Font-Bold="True" ForeColor="Red" 
-                    Text="*"></asp:Label>
-                <asp:Label ID="Label37" runat="server" Text="Secret Question :"></asp:Label>
-            </td>
-            <td>
-                <asp:DropDownList ID="ddlQuestion" runat="server" Width="296px" 
-                    CssClass="textbox">
-                </asp:DropDownList>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" 
-                    ControlToValidate="ddlQuestion" ErrorMessage="Please select secret question." 
-                    InitialValue="0">*</asp:RequiredFieldValidator>
-            </td>
-        </tr><tr>
-            <td align="left" class="style2" >
-                <asp:Label ID="Label38" runat="server" Font-Bold="True" ForeColor="Red" 
-                    Text="*"></asp:Label>
-                <asp:Label ID="Label39" runat="server" Text="Answer :"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txtAns" runat="server" Width="158px" CssClass="textbox"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" 
-                    ControlToValidate="txtAns" ErrorMessage="Please enter answer.">*</asp:RequiredFieldValidator>
-            </td>
         </tr>
         <tr>
             <td class="style2" >
@@ -274,7 +235,38 @@
                     CausesValidation="False" onclick="btnCancel_Click" />
             </td>
         </tr>
-       
+       <tr id="tr1" runat="server" visible="false">
+            <td align="left" class="style2"  >
+                <asp:Label ID="Label32" runat="server" Font-Bold="True" ForeColor="Red" 
+                    Text="*"></asp:Label>
+                <asp:Label ID="Label33" runat="server" Text="Password :"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password" Width="158px" 
+                    CssClass="textbox"></asp:TextBox>
+            </td>
+        </tr>
+        <tr id="tr2" runat="server" visible="false">
+            <td align="left" class="style2" >
+                <asp:Label ID="Label36" runat="server" Font-Bold="True" ForeColor="Red" 
+                    Text="*"></asp:Label>
+                <asp:Label ID="Label37" runat="server" Text="Secret Question :"></asp:Label>
+            </td>
+            <td>
+                <asp:DropDownList ID="ddlQuestion" runat="server" Width="296px" 
+                    CssClass="textbox">
+                </asp:DropDownList>
+            </td>
+        </tr><tr id="tr3" runat="server" visible="false" >
+            <td align="left" class="style2" >
+                <asp:Label ID="Label38" runat="server" Font-Bold="True" ForeColor="Red" 
+                    Text="*"></asp:Label>
+                <asp:Label ID="Label39" runat="server" Text="Answer :"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txtAns" runat="server" Width="158px" CssClass="textbox"></asp:TextBox>
+            </td>
+        </tr>
     </table>
       </div><div class="clear">
    <asp:ValidationSummary ID="ValidationSummary1" runat="server" 

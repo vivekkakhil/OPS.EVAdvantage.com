@@ -14,7 +14,7 @@ using System.Data.Common;
 /// <summary>
 /// Summary description for AuthCode
 /// </summary>
-namespace EVA.BusinessObject
+namespace ops.evadvantage.BusinessObject
 {
     public class AuthCode
     {

@@ -9,16 +9,16 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.BusinessObject;
+using ops.evadvantage.BusinessObject;
 using System.Data.Common;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 
 /// <summary>
 /// Summary description for createEmp
 /// </summary>
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
-    public class CreateEmp:EVA.BusinessObject.CreateEmp
+    public class CreateEmp:ops.evadvantage.BusinessObject.CreateEmp
     {
         public CreateEmp()
         {

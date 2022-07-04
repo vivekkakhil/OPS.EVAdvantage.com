@@ -10,15 +10,15 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 //using System.Xml.Linq;
 using System.Data.Common;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 
 /// <summary>
 /// Summary description for DataUpload
 /// </summary>
 /// 
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
-    public class DataUpload:EVA.BusinessObject.DataUpload
+    public class DataUpload:ops.evadvantage.BusinessObject.DataUpload
     {
         public DataUpload()
         {

@@ -9,7 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.AuthorizeNetCode;
+using ops.evadvantage.AuthorizeNetCode;
 using System.Net;
 using System.IO;
 using System.Text;

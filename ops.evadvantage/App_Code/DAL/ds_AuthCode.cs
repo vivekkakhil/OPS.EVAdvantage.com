@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.Common;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 
 /// <summary>
 /// Summary description for ds_AuthCode

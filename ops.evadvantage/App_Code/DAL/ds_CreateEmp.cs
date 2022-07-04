@@ -9,13 +9,13 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 using System.Data.Common;
 
 /// <summary>
 /// Summary description for ds_createEmp
 /// </summary>
-namespace EVA.DAL
+namespace ops.evadvantage.DAL
 {
     public class ds_CreateEmp
     {

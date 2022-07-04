@@ -9,7 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using EVA.DAL;
+using ops.evadvantage.DAL;
 using System.Data;
 using System.Data.Common;
 
@@ -19,7 +19,7 @@ using System.Data.Common;
 /// Summary description for report
 /// </summary>
 /// 
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
     public class report
     {

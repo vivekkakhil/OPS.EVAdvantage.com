@@ -14,7 +14,7 @@ using System.Xml.Linq;
 /// Summary description for Verify
 /// </summary>
 /// 
-namespace EVA.BusinessObject
+namespace ops.evadvantage.BusinessObject
 {
     public class Verify
     {

@@ -10,14 +10,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.Common;
-using EVA.DAL;
-using EVA.BusinessObject;
+using ops.evadvantage.DAL;
+using ops.evadvantage.BusinessObject;
 /// <summary>
 /// Summary description for AuthCode
 /// </summary>
-namespace EVA.BLL
+namespace ops.evadvantage.BLL
 {
-    public class AuthCode : EVA.BusinessObject.AuthCode
+    public class AuthCode : ops.evadvantage.BusinessObject.AuthCode
     {
         public AuthCode()
         {

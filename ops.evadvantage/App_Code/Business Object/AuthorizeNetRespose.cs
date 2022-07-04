@@ -13,7 +13,7 @@ using System.Xml.Linq;
 /// <summary>
 /// Summary description for AuthorizeNetRespose
 /// </summary>
-namespace EVA.AuthorizeNetCode
+namespace ops.evadvantage.AuthorizeNetCode
 {
     public class AuthorizeNetRespose
     {

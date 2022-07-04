@@ -15,7 +15,7 @@ using System.Data.Common;
 /// Summary description for ds_Verify
 /// </summary>
 /// 
-namespace EVA.DAL
+namespace ops.evadvantage.DAL
 {
     public class ds_Verify
     {

@@ -14,7 +14,7 @@ using System.Web.UI.WebControls.WebParts;
 /// Summary description for ssverify
 /// </summary>
 /// 
-namespace EVA.BusinessObject
+namespace ops.evadvantage.BusinessObject
 {
     public class ssverify
     {
