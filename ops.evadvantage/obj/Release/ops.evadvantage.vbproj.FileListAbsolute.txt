@@ -1,0 +1,31 @@
+E:\UCA_PortalEVAdvantage\portal.evadvantage\bin\portal.evadvantage.dll.config
+E:\UCA_PortalEVAdvantage\portal.evadvantage\bin\portal.evadvantage.dll
+E:\UCA_PortalEVAdvantage\portal.evadvantage\bin\portal.evadvantage.pdb
+E:\UCA_PortalEVAdvantage\portal.evadvantage\bin\portal.evadvantage.xml
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\portal.evadvantage.Resources.resources
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\ops.evadvantage.vbproj.GenerateResource.cache
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\ops.evadvantage.vbproj.CoreCompileInputs.cache
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\portal.evadvantage.dll
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\portal.evadvantage.xml
+E:\UCA_PortalEVAdvantage\portal.evadvantage\obj\Release\portal.evadvantage.pdb
+E:\UCA_OpsEVAdvantage\ops.evadvantage\bin\portal.evadvantage.dll.config
+E:\UCA_OpsEVAdvantage\ops.evadvantage\bin\portal.evadvantage.dll
+E:\UCA_OpsEVAdvantage\ops.evadvantage\bin\portal.evadvantage.pdb
+E:\UCA_OpsEVAdvantage\ops.evadvantage\bin\portal.evadvantage.xml
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.AssemblyReference.cache
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\portal.evadvantage.Resources.resources
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.GenerateResource.cache
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.CoreCompileInputs.cache
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\portal.evadvantage.dll
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\portal.evadvantage.xml
+E:\UCA_OpsEVAdvantage\ops.evadvantage\obj\Release\portal.evadvantage.pdb
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.dll.config
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.dll
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.pdb
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.xml
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\portal.evadvantage.Resources.resources
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.GenerateResource.cache
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\ops.evadvantage.vbproj.CoreCompileInputs.cache
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\portal.evadvantage.dll
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\portal.evadvantage.xml
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Release\portal.evadvantage.pdb

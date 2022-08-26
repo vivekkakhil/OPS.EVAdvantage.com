@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Price>
+	<Employment name="only" cost="30">
+	</Employment>
+	<EmploymentSalary name="salary" cost="40">
+	</EmploymentSalary>
+</Price>

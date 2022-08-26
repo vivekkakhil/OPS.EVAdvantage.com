@@ -1,0 +1,10 @@
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.dll.config
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.dll
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.pdb
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\bin\portal.evadvantage.xml
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\portal.evadvantage.Resources.resources
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\ops.evadvantage.vbproj.GenerateResource.cache
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\ops.evadvantage.vbproj.CoreCompileInputs.cache
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\portal.evadvantage.dll
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\portal.evadvantage.xml
+E:\UCA All PROJECTS\UC\OPS.EVAdvantage.com-master\OPS.EVAdvantage.com-master\ops.evadvantage\obj\Debug\portal.evadvantage.pdb
